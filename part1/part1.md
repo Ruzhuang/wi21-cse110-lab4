@@ -34,4 +34,6 @@
 16. == have type conversions but === does not, if the types are not the same, === return false immediately
 17. "2 == true" is false as explained before, so does not enter the "if(2 == true){...}" block;
     "else if(2)" converts 2 to boolean true, so enter the block
-18. 
+19. [6,8,10]. For iteration of for loop, first enter function doSomething, where the current element is added with 2, then enter the anonymous function "function(x){return x*2}", with x = (current element+2) and in the anonymous function, the (current element+2) is multiplied by 2. Then, this result is pushed to the newArr. So, the newArr = [(1+2)\*2,(2+2)\*2,(3+2)\*2 ]
+21. 1 then 4 then 3 then 1.
+    The first line is executed immidiately and printed 1, then the second line, but the log function is delayed for 1 second. Then the third line, and then the fourth line. Although the third line set a timeout for zero second, it will experience a short delay before printing 3, so 4 is printed next, then 3, then after that 1 second delay, 2 is printed.
